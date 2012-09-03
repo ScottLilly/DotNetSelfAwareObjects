@@ -4,15 +4,15 @@ using SAO.Attributes.Base;
 
 namespace SAO.Attributes.Property.Validation
 {
-    public class MinimumValueAttribute : SAOBasePropertyValidationAttribute
+    public class MaximumValueAttribute : SAOBasePropertyValidationAttribute
     {
-        private object MinimumValue { get; set; }
+        private object MaximumValue { get; set; }
 
-        public MinimumValueAttribute(object minimumValue, string errorMessage) : base(errorMessage)
+        public MaximumValueAttribute(object maximumValue, string errorMessage) : base(errorMessage)
         {
-            if(minimumValue.IsNumericType())
+            if(maximumValue.IsNumericType())
             {
-                MinimumValue = minimumValue;
+                MaximumValue = maximumValue;
             }
         }
 
@@ -20,7 +20,7 @@ namespace SAO.Attributes.Property.Validation
         {
             if(property.IsNumericType())
             {
-                if(Convert.ToDouble(property) < Convert.ToDouble(MinimumValue))
+                if(Convert.ToDouble(property) > Convert.ToDouble(MaximumValue))
                 {
                     obj.Invalidate(ErrorMessage);
                 }
