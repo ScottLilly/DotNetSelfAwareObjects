@@ -4,7 +4,7 @@ using SAO.Attributes.Base;
 
 namespace SAO.Attributes.Property.Validation
 {
-    [AttributeUsage(AttributeTargets.Property, Inherited = true, AllowMultiple = true)]
+    [AttributeUsage(AttributeTargets.Property, Inherited = true, AllowMultiple = false)]
     public class CannotBeEmptyStringAttribute : SAOBasePropertyValidationAttribute
     {
         public CannotBeEmptyStringAttribute(string errorMessage) : base(errorMessage)

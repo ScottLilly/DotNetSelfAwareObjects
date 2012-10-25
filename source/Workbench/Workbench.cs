@@ -22,6 +22,10 @@ namespace Workbench
             txtStateCode.BindTextPropertyTo(_customer, "StateCode");
             txtZIPCode.BindTextPropertyTo(_customer, "ZIPCode");
             txtAge.BindTextPropertyTo(_customer, "Age");
+            txtPassword.BindTextPropertyTo(_customer, "Password");
+            txtConfirmPassword.BindTextPropertyTo(_customer, "ConfirmPassword");
+            txtValue1.BindTextPropertyTo(_customer, "Value1");
+            txtValue2.BindTextPropertyTo(_customer, "Value2");
         }
 
         private void btnSave_Click(object sender, System.EventArgs e)

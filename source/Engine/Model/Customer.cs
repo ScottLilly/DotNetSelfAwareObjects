@@ -27,6 +27,7 @@ namespace Engine.Model
             }
         }
 
+        [Required("Address is required")]
         [MinimumLength(5, "Address cannot be less than 5 characters long")]
         [MaximumLength(100, "Address cannot be more than 100 characters long")]
         public string Address { get; set; }
@@ -46,5 +47,17 @@ namespace Engine.Model
         //[MaximumValue(150, "Age cannot be larger than 150")]
         [WithinRange(1, 150, "Age must be between 1 and 150")]
         public int Age { get; set; }
+
+        [CannotBeEmptyString("Password must have a value")]
+        public string Password { get; set; }
+
+        [CannotBeEmptyString("Confirmation password must have a value")]
+        [MustHaveSameValueAs("Password", "Confirmation password must match Password")]
+        public string ConfirmPassword { get; set; }
+
+        public decimal Value1 { get; set; }
+
+        [MustBeGreaterThanOrEqualTo("Value1", "Value2 must be greater than or equal to Value 1")]
+        public decimal Value2 { get; set; }
     }
 }

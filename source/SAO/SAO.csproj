@@ -50,11 +50,17 @@
     <Compile Include="Attributes\Property\Default\DefaultNullOrEmptyStringTo.cs" />
     <Compile Include="Attributes\Property\Default\DefaultNullValueToAttribute.cs" />
     <Compile Include="Attributes\Property\Validation\ExactLengthStringAttribute.cs" />
+    <Compile Include="Attributes\Property\Validation\MustBeGreaterThan.cs" />
+    <Compile Include="Attributes\Property\Validation\MustBeGreaterThanOrEqualTo.cs" />
+    <Compile Include="Attributes\Property\Validation\MustBeLessThan.cs" />
+    <Compile Include="Attributes\Property\Validation\MustBeLessThanOrEqualTo.cs" />
+    <Compile Include="Attributes\Property\Validation\MustHaveSameValueAsAttribute.cs" />
     <Compile Include="Attributes\Property\Validation\MatchesRegExAttribute.cs" />
     <Compile Include="Attributes\Property\Validation\MaximumLengthAttribute.cs" />
     <Compile Include="Attributes\Property\Validation\MaximumValueAttribute.cs" />
     <Compile Include="Attributes\Property\Validation\MinimumLengthAttribute.cs" />
     <Compile Include="Attributes\Property\Validation\MinimumValueAttribute.cs" />
+    <Compile Include="Attributes\Property\Validation\RequiredAttribute.cs" />
     <Compile Include="Attributes\Property\Validation\WithinRangeAttribute.cs" />
     <Compile Include="Attributes\SAODefaultAttributeInfo.cs" />
     <Compile Include="Attributes\Base\SAOBasePropertyValidationAttribute.cs" />
