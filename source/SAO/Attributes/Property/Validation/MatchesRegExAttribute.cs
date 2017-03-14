@@ -5,10 +5,10 @@ using SAO.Attributes.Base;
 
 namespace SAO.Attributes.Property.Validation
 {
-    [AttributeUsage(AttributeTargets.Property, Inherited = true, AllowMultiple = true)]
+    [AttributeUsage(AttributeTargets.Property, AllowMultiple = true)]
     public class MatchesRegExAttribute : SAOBasePropertyValidationAttribute
     {
-        private string RegEx { get; set; }
+        private string RegEx { get; }
 
         public MatchesRegExAttribute(string regEx, string errorMessage) : base(errorMessage)
         {
@@ -17,7 +17,7 @@ namespace SAO.Attributes.Property.Validation
 
         public override void Validate(SAObject obj, object property)
         {
-            if((property == null) || (!new Regex(RegEx).IsMatch(property.ToString())))
+            if(property == null || !new Regex(RegEx).IsMatch(property.ToString()))
             {
                 obj.Invalidate(ErrorMessage);
             }

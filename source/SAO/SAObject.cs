@@ -10,23 +10,20 @@ namespace SAO
         public bool IsValid { get; private set; }
 
         [XmlIgnore]
-        public List<string> ErrorMessages { get; private set; }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void OnPropertyChanged(string propertyName)
-        {
-            if(PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        } 
+        public List<string> ErrorMessages { get; }
 
         protected SAObject()
         {
             ErrorMessages = new List<string>();
 
             SAOInitializer.Initialize(this);
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         public void Validate()

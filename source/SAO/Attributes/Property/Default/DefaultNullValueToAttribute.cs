@@ -4,10 +4,10 @@ using SAO.Attributes.Interfaces;
 
 namespace SAO.Attributes.Property.Default
 {
-    [AttributeUsage(AttributeTargets.Property, Inherited = true, AllowMultiple = false)]
+    [AttributeUsage(AttributeTargets.Property)]
     public class DefaultNullValueToAttribute : Attribute, ISAOPropertyDefaultApplicator
     {
-        public object DefaultValue { get; private set; }
+        public object DefaultValue { get; }
 
         public DefaultNullValueToAttribute(object defaultValue)
         {
@@ -16,7 +16,7 @@ namespace SAO.Attributes.Property.Default
 
         public bool NeedsDefaultApplied(object property)
         {
-            return (property == null);
+            return property == null;
         }
     }
 }

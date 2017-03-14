@@ -4,7 +4,7 @@ using SAO.Attributes.Base;
 
 namespace SAO.Attributes.Property.Validation
 {
-    [AttributeUsage(AttributeTargets.Property, Inherited = true, AllowMultiple = false)]
+    [AttributeUsage(AttributeTargets.Property)]
     public class MustBeGreaterThanOrEqualTo : SAOBasePropertyValidationAttribute
     {
         private readonly string _propertyName;

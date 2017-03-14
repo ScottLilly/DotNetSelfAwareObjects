@@ -62,14 +62,14 @@
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(84, 156);
+            this.txtAge.Location = new System.Drawing.Point(90, 156);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(44, 23);
             this.txtAge.TabIndex = 26;
             // 
             // txtZIPCode
             // 
-            this.txtZIPCode.Location = new System.Drawing.Point(83, 127);
+            this.txtZIPCode.Location = new System.Drawing.Point(89, 127);
             this.txtZIPCode.Name = "txtZIPCode";
             this.txtZIPCode.Size = new System.Drawing.Size(122, 23);
             this.txtZIPCode.TabIndex = 25;
@@ -103,21 +103,21 @@
             // 
             // txtStateCode
             // 
-            this.txtStateCode.Location = new System.Drawing.Point(83, 98);
+            this.txtStateCode.Location = new System.Drawing.Point(89, 98);
             this.txtStateCode.Name = "txtStateCode";
             this.txtStateCode.Size = new System.Drawing.Size(44, 23);
             this.txtStateCode.TabIndex = 21;
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(83, 69);
+            this.txtCity.Location = new System.Drawing.Point(89, 69);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(235, 23);
             this.txtCity.TabIndex = 20;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(83, 40);
+            this.txtAddress.Location = new System.Drawing.Point(89, 40);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(235, 23);
             this.txtAddress.TabIndex = 19;
@@ -133,7 +133,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(130, 318);
+            this.btnSave.Location = new System.Drawing.Point(136, 318);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 26);
             this.btnSave.TabIndex = 16;
@@ -143,7 +143,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(83, 11);
+            this.txtName.Location = new System.Drawing.Point(89, 11);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(235, 23);
             this.txtName.TabIndex = 15;
@@ -168,7 +168,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(84, 185);
+            this.txtPassword.Location = new System.Drawing.Point(90, 185);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(121, 23);
             this.txtPassword.TabIndex = 28;
@@ -184,7 +184,7 @@
             // 
             // txtConfirmPassword
             // 
-            this.txtConfirmPassword.Location = new System.Drawing.Point(84, 214);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(90, 214);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(121, 23);
             this.txtConfirmPassword.TabIndex = 30;
@@ -200,7 +200,7 @@
             // 
             // txtValue2
             // 
-            this.txtValue2.Location = new System.Drawing.Point(84, 275);
+            this.txtValue2.Location = new System.Drawing.Point(90, 275);
             this.txtValue2.Name = "txtValue2";
             this.txtValue2.Size = new System.Drawing.Size(121, 23);
             this.txtValue2.TabIndex = 34;
@@ -216,7 +216,7 @@
             // 
             // txtValue1
             // 
-            this.txtValue1.Location = new System.Drawing.Point(84, 246);
+            this.txtValue1.Location = new System.Drawing.Point(90, 246);
             this.txtValue1.Name = "txtValue1";
             this.txtValue1.Size = new System.Drawing.Size(121, 23);
             this.txtValue1.TabIndex = 32;
@@ -225,7 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 365);
+            this.ClientSize = new System.Drawing.Size(347, 365);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtValue2);
             this.Controls.Add(this.label10);

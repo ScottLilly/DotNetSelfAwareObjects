@@ -1,10 +1,9 @@
 ﻿using System;
-
 using SAO.Attributes.Base;
 
 namespace SAO.Attributes.Property.Validation
 {
-    [AttributeUsage(AttributeTargets.Property, Inherited = true, AllowMultiple = false)]
+    [AttributeUsage(AttributeTargets.Property)]
     public class MustHaveSameValueAsAttribute : SAOBasePropertyValidationAttribute
     {
         private readonly string _propertyName;

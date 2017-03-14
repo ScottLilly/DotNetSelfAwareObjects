@@ -1,13 +1,12 @@
 ﻿using System;
-
 using SAO.Attributes.Base;
 
 namespace SAO.Attributes.Property.Validation
 {
     public class WithinRangeAttribute : SAOBasePropertyValidationAttribute
     {
-        private object MinimumValue { get; set; }
-        private object MaximumValue { get; set; }
+        private object MinimumValue { get; }
+        private object MaximumValue { get; }
 
         public WithinRangeAttribute(object minimumValue, object maximumValue, string errorMessage) : base(errorMessage)
         {
@@ -26,7 +25,8 @@ namespace SAO.Attributes.Property.Validation
         {
             if(property.IsNumericType())
             {
-                if((Convert.ToDouble(property) < Convert.ToDouble(MinimumValue)) || (Convert.ToDouble(property) > Convert.ToDouble(MaximumValue)))
+                if((Convert.ToDouble(property) < Convert.ToDouble(MinimumValue)) ||
+                   (Convert.ToDouble(property) > Convert.ToDouble(MaximumValue)))
                 {
                     obj.Invalidate(ErrorMessage);
                 }

@@ -4,7 +4,7 @@ using SAO.Attributes.Base;
 
 namespace SAO.Attributes.Property.Validation
 {
-    [AttributeUsage(AttributeTargets.Property, Inherited = true, AllowMultiple = true)]
+    [AttributeUsage(AttributeTargets.Property, AllowMultiple = true)]
     public class CannotBeNullAttribute : SAOBasePropertyValidationAttribute
     {
         public CannotBeNullAttribute(string errorMessage) : base(errorMessage)

@@ -6,7 +6,7 @@ namespace SAO.Attributes.Property.Validation
 {
     public class MinimumValueAttribute : SAOBasePropertyValidationAttribute
     {
-        private object MinimumValue { get; set; }
+        private object MinimumValue { get; }
 
         public MinimumValueAttribute(object minimumValue, string errorMessage) : base(errorMessage)
         {

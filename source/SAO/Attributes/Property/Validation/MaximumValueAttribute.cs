@@ -6,7 +6,7 @@ namespace SAO.Attributes.Property.Validation
 {
     public class MaximumValueAttribute : SAOBasePropertyValidationAttribute
     {
-        private object MaximumValue { get; set; }
+        private object MaximumValue { get; }
 
         public MaximumValueAttribute(object maximumValue, string errorMessage) : base(errorMessage)
         {

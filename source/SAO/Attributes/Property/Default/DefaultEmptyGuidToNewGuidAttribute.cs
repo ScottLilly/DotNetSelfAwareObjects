@@ -4,16 +4,16 @@ using SAO.Attributes.Interfaces;
 
 namespace SAO.Attributes.Property.Default
 {
-    [AttributeUsage(AttributeTargets.Property, Inherited = true, AllowMultiple = false)]
+    [AttributeUsage(AttributeTargets.Property)]
     public class DefaultEmptyGuidToNewGuidAttribute : Attribute, ISAOPropertyDefaultApplicator
     {
-        public object DefaultValue { get { return Guid.NewGuid(); } }
+        public object DefaultValue => Guid.NewGuid();
 
         public bool NeedsDefaultApplied(object property)
         {
             if(property is Guid)
             {
-                return ((Guid)property == Guid.Empty);
+                return (Guid)property == Guid.Empty;
             }
 
             return false;
