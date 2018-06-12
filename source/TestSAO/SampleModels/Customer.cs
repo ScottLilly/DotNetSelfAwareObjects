@@ -3,7 +3,7 @@ using SAO;
 using SAO.Attributes.Property.Default;
 using SAO.Attributes.Property.Validation;
 
-namespace Engine.Model
+namespace TestSAO.SampleModels
 {
     public class Customer : SAObject
     {

@@ -1,5 +1,4 @@
 ﻿using System;
-
 using SAO.Attributes.Base;
 
 namespace SAO.Attributes.Property.Validation

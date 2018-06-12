@@ -10,7 +10,8 @@ namespace SAO
     {
         private static readonly List<Type> _cachedSAOClasseTypes = new List<Type>();
 
-        internal static readonly List<SAODefaultAttributeInfo> DefaultAttributes = new List<SAODefaultAttributeInfo>();
+        internal static readonly List<SAODefaultAttributeInfo> DefaultAttributes = 
+            new List<SAODefaultAttributeInfo>();
 
         internal static readonly List<SAOValidationAttributeInfo> ValidationAttributes =
             new List<SAOValidationAttributeInfo>();
@@ -32,14 +33,11 @@ namespace SAO
         {
             foreach(PropertyInfo property in classType.GetProperties())
             {
-                foreach(
-                    ISAOPropertyDefaultApplicator attribute in
+                foreach(ISAOPropertyDefaultApplicator attribute in
                     property.GetCustomAttributes(typeof(ISAOPropertyDefaultApplicator), true))
                 {
-                    if(
-                        !DefaultAttributes.Exists(
-                                                  x =>
-                                                      x.ClassType == classType && x.PropertyName == property.Name &&
+                    if(!DefaultAttributes.Exists(x => x.ClassType == classType &&
+                                                      x.PropertyName == property.Name &&
                                                       x.DefaultAttribute == attribute))
                     {
                         SAODefaultAttributeInfo rule = new SAODefaultAttributeInfo
@@ -59,15 +57,12 @@ namespace SAO
         {
             foreach(PropertyInfo property in classType.GetProperties())
             {
-                foreach(
-                    ISAOPropertyValidator attribute in property.GetCustomAttributes(typeof(ISAOPropertyValidator), true)
-                )
+                foreach(ISAOPropertyValidator attribute in
+                    property.GetCustomAttributes(typeof(ISAOPropertyValidator), true))
                 {
-                    if(
-                        !ValidationAttributes.Exists(
-                                                     x =>
-                                                         (x.ClassType == classType) && (x.PropertyName == property.Name) &&
-                                                         (x.ValidationAttribute == attribute)))
+                    if(!ValidationAttributes.Exists(x => x.ClassType == classType &&
+                                                         x.PropertyName == property.Name &&
+                                                         x.ValidationAttribute == attribute))
                     {
                         SAOValidationAttributeInfo rule = new SAOValidationAttributeInfo
                                                           {

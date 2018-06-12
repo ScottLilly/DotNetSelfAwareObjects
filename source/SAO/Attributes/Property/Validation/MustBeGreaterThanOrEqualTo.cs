@@ -1,5 +1,4 @@
 ﻿using System;
-
 using SAO.Attributes.Base;
 
 namespace SAO.Attributes.Property.Validation
@@ -16,7 +15,7 @@ namespace SAO.Attributes.Property.Validation
 
         public override void Validate(SAObject obj, object property)
         {
-            object otherProperty = obj.GetType().GetProperty(_propertyName).GetValue(obj, null);
+            object otherProperty = obj.GetType().GetProperty(_propertyName)?.GetValue(obj, null);
 
             if(property == null)
             {

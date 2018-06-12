@@ -1,12 +1,11 @@
 ﻿using System;
-
 using SAO.Attributes.Interfaces;
 
 namespace SAO.Attributes.Base
 {
     public abstract class SAOBasePropertyValidationAttribute : Attribute, ISAOPropertyValidator
     {
-        protected string ErrorMessage { get; private set; }
+        protected string ErrorMessage { get; }
 
         protected SAOBasePropertyValidationAttribute(string errorMessage)
         {

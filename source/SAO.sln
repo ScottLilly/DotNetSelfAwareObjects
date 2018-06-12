@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAO", "SAO\SAO.csproj", "{D57F7E79-C25C-4497-BEF5-A0C7ACEE6D63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workbench", "Workbench\Workbench.csproj", "{1C809C43-734B-4A29-BA92-DFD1741BFCB4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{00463F14-AB4C-4D96-A8EE-8667316B1108}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSAO", "TestSAO\TestSAO.csproj", "{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,11 +51,24 @@ Global
 		{00463F14-AB4C-4D96-A8EE-8667316B1108}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{00463F14-AB4C-4D96-A8EE-8667316B1108}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{00463F14-AB4C-4D96-A8EE-8667316B1108}.Release|x86.ActiveCfg = Release|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Debug|x86.Build.0 = Debug|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Release|x86.ActiveCfg = Release|Any CPU
+		{8DAD5EE8-D181-425E-80F7-2D35EBDD5E80}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {B0F6EE8D-A721-44DD-BFFC-A80D3F0EB1DF}
 	EndGlobalSection
 EndGlobal

@@ -1,5 +1,4 @@
 ﻿using System;
-
 using SAO.Attributes.Interfaces;
 
 namespace SAO.Attributes.Property.Default
@@ -11,9 +10,9 @@ namespace SAO.Attributes.Property.Default
 
         public bool NeedsDefaultApplied(object property)
         {
-            if(property is Guid)
+            if(property is Guid guid)
             {
-                return (Guid)property == Guid.Empty;
+                return guid == Guid.Empty;
             }
 
             return false;

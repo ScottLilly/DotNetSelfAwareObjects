@@ -217,3 +217,7 @@ pip-log.txt
 
 # SVN
 *.svn
+
+#Visual Studio
+source/packages
+source/.vs

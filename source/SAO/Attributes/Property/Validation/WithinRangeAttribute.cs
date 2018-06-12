@@ -25,8 +25,10 @@ namespace SAO.Attributes.Property.Validation
         {
             if(property.IsNumericType())
             {
-                if((Convert.ToDouble(property) < Convert.ToDouble(MinimumValue)) ||
-                   (Convert.ToDouble(property) > Convert.ToDouble(MaximumValue)))
+                double d = Convert.ToDouble(property);
+
+                if(d < Convert.ToDouble(MinimumValue) ||
+                   d > Convert.ToDouble(MaximumValue))
                 {
                     obj.Invalidate(ErrorMessage);
                 }

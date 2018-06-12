@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-
 using SAO.Attributes;
 
 namespace SAO
@@ -13,9 +12,9 @@ namespace SAO
 
             foreach(SAODefaultAttributeInfo attribute in SAOAttributeCache.DefaultAttributes.Where(x => (x.ClassType == obj.GetType())))
             {
-                if(attribute.DefaultAttribute.NeedsDefaultApplied(obj.GetType().GetProperty(attribute.PropertyName).GetValue(obj, null)))
+                if(attribute.DefaultAttribute.NeedsDefaultApplied(obj.GetType().GetProperty(attribute.PropertyName)?.GetValue(obj, null)))
                 {
-                    obj.GetType().GetProperty(attribute.PropertyName).SetValue(obj, attribute.DefaultAttribute.DefaultValue, null);
+                    obj.GetType().GetProperty(attribute.PropertyName)?.SetValue(obj, attribute.DefaultAttribute.DefaultValue, null);
                 }
             }
         }

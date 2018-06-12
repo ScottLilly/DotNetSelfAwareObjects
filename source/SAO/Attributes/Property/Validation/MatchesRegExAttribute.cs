@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-
 using SAO.Attributes.Base;
 
 namespace SAO.Attributes.Property.Validation

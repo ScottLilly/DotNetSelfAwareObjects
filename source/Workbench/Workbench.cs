@@ -34,9 +34,9 @@ namespace Workbench
             {
                 CustomerController.SaveToDatabase(_customer);
             }
-            catch(DataValidationException)
+            catch(SAODataValidationException)
             {
-                MessageBox.Show(_customer.ErrorMessages.ListToString());
+                MessageBox.Show(_customer.ValidationErrors.ListToString());
             }
         }
     }

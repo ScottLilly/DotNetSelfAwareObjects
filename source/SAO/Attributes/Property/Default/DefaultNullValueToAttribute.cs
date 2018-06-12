@@ -1,5 +1,4 @@
 ﻿using System;
-
 using SAO.Attributes.Interfaces;
 
 namespace SAO.Attributes.Property.Default

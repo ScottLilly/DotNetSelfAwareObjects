@@ -16,7 +16,7 @@ namespace Engine.Controllers
             }
             else
             {
-                throw new DataValidationException();
+                throw new SAODataValidationException();
             }
         }
     }

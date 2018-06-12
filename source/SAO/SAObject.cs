@@ -1,35 +1,27 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel;
 using System.Xml.Serialization;
 
 namespace SAO
 {
-    public abstract class SAObject : INotifyPropertyChanged
+    public abstract class SAObject
     {
         [XmlIgnore]
         public bool IsValid { get; private set; }
 
         [XmlIgnore]
-        public List<string> ErrorMessages { get; }
+        public List<string> ValidationErrors { get; }
 
         protected SAObject()
         {
-            ErrorMessages = new List<string>();
+            ValidationErrors = new List<string>();
 
             SAOInitializer.Initialize(this);
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         public void Validate()
         {
             IsValid = true;
-            ErrorMessages.Clear();
+            ValidationErrors.Clear();
 
             SAOValidator.Validate(this);
         }
@@ -37,7 +29,7 @@ namespace SAO
         internal void Invalidate(string errorMessage)
         {
             IsValid = false;
-            ErrorMessages.Add(errorMessage);
+            ValidationErrors.Add(errorMessage);
         }
     }
 }
