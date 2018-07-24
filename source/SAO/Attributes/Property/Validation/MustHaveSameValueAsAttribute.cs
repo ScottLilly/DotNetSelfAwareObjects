@@ -21,7 +21,7 @@ namespace SAO.Attributes.Property.Validation
             {
                 obj.Invalidate(ErrorMessage);
             }
-            else if(property.ToString() != otherProperty.ToString())
+            else if(otherProperty != null && property.ToString() != otherProperty.ToString())
             {
                 obj.Invalidate(ErrorMessage);
             }
