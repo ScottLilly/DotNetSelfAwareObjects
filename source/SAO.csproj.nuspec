@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SelfAwareObjects</id>
+    <version>1.0.0</version>
+    <authors>Scott Lilly</authors>
+    <owners>Scott Lilly</owners>
+    <licenseUrl>https://github.com/ScottLilly/DotNetSelfAwareObjects/blob/master/License.txt</licenseUrl>
+    <projectUrl>https://github.com/ScottLilly/DotNetSelfAwareObjects</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Use attributes to define model property validation rules.</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Projects\OpenSource\DotNetSelfAwareObjects\source\SAO\bin\Release\SAO.dll" target="lib\AnyCPU\SAO.dll"/>
+  </files>
+</package>

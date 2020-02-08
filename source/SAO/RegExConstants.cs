@@ -237,7 +237,7 @@
             public static class US
             {
                 public const string AMATEUR_RADIO_CALL_SIGN = @"^[AaWaKkNn][a-zA-Z]?[0-9][a-zA-Z]{1,3}$";
-                public const string POSTAL_CODE = @"^(\d{5}-\d{4}|\d{5})$";
+                public const string POSTAL_CODE = @"^(\d{5}-\d{4}|\d{5}|\d{9})$";
 
                 public const string SOCIAL_SECURITY_NUMBER =
                     @"^(?=((0[1-9]0)|([1-7][1-7]\d)|(00[1-9])|(0[1-9][1-9]))-(?=(([1-9]0)|(0[1-9])|([1-9][1-9]))-(?=((\d{3}[1-9])$|([1-9]\d{3})$|(\d[1-9]\d{2})$|(\d{2}[1-9]\d)$))))";
